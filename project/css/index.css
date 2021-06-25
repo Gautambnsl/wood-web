@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-bg-color: #FFF5EB;
+    --main-clr-1: #DEEDF0;
+    --main-clr-2: #F4C7AB;
+    --main-clr-3: #B2B8A3;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+header{
+    background-color: var(--main-clr-3);
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+   
+}
+
+nav div img {
+    height: 50px;
+    width: 82px;
+    padding: 0PX 22PX;
+}
+
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none ;
+    padding: 12px;
+    
+}
+
+nav ul li a{
+    color: var(--main-clr-1);
+    text-decoration: none;
+    list-style: none ;
+    font-weight: bold;
+    
+}
+nav ul li a:hover{
+    text-shadow: 2px 2px 2px black;
+    font-size: large;
+    /* font-style:oblique; */
+}
+
+nav .search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+   
+    width: 33vw;
+    height: 29px;
+    border-radius: 3px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+    margin: 0px 3px 0px 134px;
+    font-family: 'Lato', sans-serif;
+}
+
+.search .btn{
+    padding: 4px 7px;
+    color: white;
+    background-color: var(--main-clr-3);
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+/* .container{
+    height: calc(200vh);
+} */
+
+.container .slider{
+    margin: 16px auto;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.container .slider img{
+    height: 461px;
+    width: 80vw;
+}
+
+/* .container .group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;    
+}
+
+.showimg{
+    width: 200px;
+    height: 300px; 
+}*/
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 6px;
+    grid-column-gap: 6px;
+    width: 80vw;
+    margin: auto;
+}
+
+
+.grid-item:hover{
+    cursor: pointer;
+
+}
+
+footer{
+    height: 12vh;
+    background-color: var(--main-clr-3);
+    color: var(--main-clr-1);
+    font-family: 'Lato', sans-serif;
+}
